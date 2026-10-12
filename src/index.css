@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@theme {
+  --color-charcoal-950: #0d0d0d;
+  --color-charcoal-900: #121212;
+  --color-charcoal-800: #171717;
+  --color-charcoal-700: #1f1f1f;
+  --color-charcoal-600: #262626;
+  --color-charcoal-500: #333333;
+
+  --color-cream-50: #fbf9f5;
+  --color-cream-100: #f6f0e6;
+  --color-cream-200: #ede4d4;
+  --color-cream-300: #ded0b8;
+
+  --color-gold-300: #e2cba0;
+  --color-gold-400: #d4b882;
+  --color-gold-500: #c7a56a;
+  --color-gold-600: #af8d50;
+  --color-gold-700: #8f6f36;
+
+  --color-terracotta-500: #a94f36;
+  --color-terracotta-600: #8f3f29;
+
+  --color-neutral-gray: #85817a;
+  --color-neutral-light: #a8a49d;
+
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-bengali: "Hind Siliguri", "Noto Sans Bengali", sans-serif;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #171717;
+    color: #f6f0e6;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-serif {
+    font-family: var(--font-serif);
+  }
+
+  .font-bengali {
+    font-family: var(--font-bengali);
+  }
+}
+
+/* Custom refined scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #171717;
+}
+::-webkit-scrollbar-thumb {
+  background: #33312e;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c7a56a;
+}
